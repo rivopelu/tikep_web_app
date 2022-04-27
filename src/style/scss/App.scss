@@ -1,0 +1,20 @@
+@import url("https://fonts.googleapis.com/css2?family=Poppins:wght@100;200;300;400;500;600;700&display=swap");
+
+@import "AuthPage.scss";
+
+* {
+  padding: 0;
+  margin: 0;
+  box-sizing: border-box;
+  font-family: "Poppins", sans-serif;
+}
+
+.containerMain {
+  padding: 0 100px;
+}
+
+@media only screen and (max-width: 900px) {
+  .containerMain {
+    padding: 0 20px;
+  }
+}

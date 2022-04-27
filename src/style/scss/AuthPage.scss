@@ -1,0 +1,28 @@
+html.light {
+  .AuthPage {
+    .kiri {
+      background: url("../../pages/Auth/img/loginImg.jpg");
+      background-size: cover;
+      background-attachment: fixed;
+    }
+  }
+}
+html.dark {
+  .AuthPage {
+    .kiri {
+      background: url("../../pages/Auth/img/loginImgNight.jpg");
+      background-size: cover;
+      background-repeat: no-repeat;
+      background-position-x: -300px;
+      background-attachment: fixed;
+    }
+  }
+}
+
+.AuthPage {
+  @media only screen and (max-width: 900px) {
+    .kiri {
+      display: none;
+    }
+  }
+}

@@ -1,0 +1,28 @@
+html.light {
+  .label {
+    transition: 0.2s;
+  }
+  .inputComp {
+    transition: 0.2s;
+    .inputActive ~ .label {
+      background-color: white;
+    }
+  }
+}
+html.dark {
+  .inputComp {
+    .inputActive ~ .label {
+      background-color: rgb(17, 24, 39);
+    }
+  }
+}
+
+.inputComp {
+  .inputActive ~ .label {
+    top: -10px;
+    padding: 0 5px;
+    font-size: 13px;
+    margin-left: 5px;
+    transition: 0.3s;
+  }
+}
