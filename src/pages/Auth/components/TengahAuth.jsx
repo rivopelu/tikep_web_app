@@ -5,8 +5,13 @@ import { FontAwesomeIcon } from '@fortawesome/react-fontawesome'
 import { faAppleAlt, faEye, faEyeSlash, faUser } from '@fortawesome/free-solid-svg-icons'
 import { BtnComp, InputComp } from '../../../components'
 import { Link } from 'react-router-dom'
+import { useNavigate } from 'react-router-dom'
 
 const TengahAuth = () => {
+    let navigate = useNavigate()
+    const klikMasuk = () => {
+        navigate('/')
+    }
 
     const [mata, setMata] = useState(false)
     const mataKlik = () => {
@@ -60,7 +65,7 @@ const TengahAuth = () => {
                 </div>
             </div>
             <Link to={'/login'} className=' text-sm text-orange-500 mt-3'>Lupa Password?</Link>
-            <BtnComp className={'mt-4'} title={'Masuk'} onClick={() => alert('klik Masuk')} />
+            <BtnComp className={'mt-4'} title={'Masuk'} onClick={klikMasuk} />
             <div className='mt-7 text-sm'>
                 Belum Memiliki Akun ? <Link to={'/register'} className='text text-orange-500'>Silahkan Register</Link>
             </div>
