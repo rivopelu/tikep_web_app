@@ -1,8 +1,13 @@
 import React from 'react'
+import { Navbar, ToggleTheme } from '../components'
 
 const MainPage = () => {
     return (
-        <div>MainPage</div>
+        <>
+            <Navbar />
+            <ToggleTheme />
+            <div>MainPage</div>
+        </>
     )
 }
 
