@@ -9,9 +9,52 @@
   font-family: "Poppins", sans-serif;
 }
 
+::-webkit-scrollbar {
+  width: 5px;
+
+}
+
+::-webkit-scrollbar-thumb:hover {
+  background: #555;
+  transition: .2s;
+}
+
+::-webkit-scrollbar-thumb {
+  background: rgb(202, 105, 35);
+  border-radius: 5px;
+  transition: .2s;
+}
+
+html.light {
+
+  ::-webkit-scrollbar-track {
+    background: rgb(229, 231, 235);
+  }
+
+
+
+}
+
+html.dark {
+
+  ::-webkit-scrollbar-track {
+    background: rgb(21, 27, 36);
+  }
+
+
+}
+
+html,
+body {
+  max-width: 100%;
+  overflow-x: hidden;
+}
+
 .containerMain {
   padding: 0 100px;
 }
+
+
 
 @media only screen and (max-width: 900px) {
   .containerMain {
