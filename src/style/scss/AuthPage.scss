@@ -1,23 +1,13 @@
-html.light {
-  .AuthPage {
-    .kiri {
-      background: url("../../pages/Auth/img/loginImg.jpg");
-      background-size: cover;
-      background-position: right;
-      background-attachment: fixed;
-    }
-  }
+.AuthPage {
+  .kiri {
+    background: url("../../pages/Auth/img/loginImgNight.jpg");
+    background-size: cover;
+    background-repeat: no-repeat;
 
-  .AuthPage {
-    .kiri {
-      background: url("../../pages/Auth/img/loginImgNight.jpg");
-      background-size: cover;
-      background-repeat: no-repeat;
-
-      background-attachment: fixed;
-    }
+    background-attachment: fixed;
   }
 }
+
 
 .AuthPage {
   @media only screen and (max-width: 900px) {
