@@ -5,7 +5,7 @@ import './navbar.scss'
 
 function Navbar() {
 
-    const [klikNav, setKlikNav] = useState(false)
+    const [klikNav, setKlikNav] = useState(true)
     const klikNavbarToggle = () => {
         setKlikNav(!klikNav)
     }
