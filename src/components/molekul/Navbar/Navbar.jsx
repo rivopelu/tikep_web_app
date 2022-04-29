@@ -27,7 +27,7 @@ function Navbar() {
         <nav id="NavbarComp" className={`z-50 bg-gray-100 dark:bg-gray-800 py-3 items-center fixed w-screen border-b duration-200  ${color ? 'border-orange-400 shadow-none' : 'shadow-md border-none'} `}>
             <div className="containerMain flex justify-between md:px-24  ">
 
-                <div className="brand lg:text-2xl "><BrandLogo /></div>
+                <NavLink to={'/'} className="brand lg:text-2xl "><BrandLogo /></NavLink>
                 <div id="navMenu" className={klikNav ? '' : 'active'} onClick={klikNavbarToggle}>
                     <span></span>
                     <span></span>
