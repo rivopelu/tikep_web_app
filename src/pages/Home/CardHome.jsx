@@ -29,9 +29,9 @@ const CardHome = () => {
 
             <div className={`mt-3 flex flex-col lg:flex-row justify-between w-full gap-3`}>
 
-                <SelectInputComp />
-                <SelectInputComp />
-                <SelectInputComp />
+                <SelectInputComp title={'Dari'} />
+                <SelectInputComp title={'Ke'} />
+                <SelectInputComp title={'Tanggal'} />
 
 
             </div>

@@ -2,7 +2,7 @@ import { faAngleDown } from '@fortawesome/free-solid-svg-icons'
 import { FontAwesomeIcon } from '@fortawesome/react-fontawesome'
 import React, { useState } from 'react'
 
-const SelectInputComp = () => {
+const SelectInputComp = ({ title }) => {
 
     const [klikValue, setKlikValue] = useState(true);
 
@@ -21,8 +21,8 @@ const SelectInputComp = () => {
     ]
     return (
         <div className='relative w-full'>
-            <div className="labal text-gray-500 mb-2">Input</div>
-            <div className="dropDown flex items-center hover:border-gray-700 dark:hover:border-gray-300 justify-between border px-3 py-1 dark:border-gray-600 rounded-md" onClick={onclickState}>
+            <div className="labal text-gray-500 mb-2">{title}</div>
+            <div className="dropDown flex items-center hover:border-gray-700 dark:hover:border-gray-300 justify-between border px-3 py-1 dark:border-gray-600 rounded-md cursor-pointer" onClick={onclickState}>
                 <p className='cursor-pointer'>select one</p>
                 <FontAwesomeIcon className={`${klikValue ? '' : 'rotate-180'} duration-200 text-gray-500`} icon={faAngleDown} />
             </div>
@@ -31,7 +31,7 @@ const SelectInputComp = () => {
                 {
                     list.map((item) => (
 
-                        <li className='border-b dark:border-gray-600 py-2 px-3 hover:bg-orange-400 hover:text-white' onClick={onclickState}>{item.nama}</li>
+                        <li className='border-b dark:border-gray-600 py-2 px-3 hover:bg-orange-400 hover:text-white cursor-pointer' onClick={onclickState}>{item.nama}</li>
                     ))
                 }
 
