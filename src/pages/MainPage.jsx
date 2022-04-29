@@ -1,21 +1,20 @@
 import React from 'react'
+import { Routes, Route } from 'react-router-dom'
 import { FooterComp, Navbar, ToggleTheme } from '../components'
+import { HomePage, TiketPage } from './index'
 
 const MainPage = () => {
     return (
         <>
             <Navbar />
             <ToggleTheme />
-            <div className="flex items-center justify-center w-screen h-screen">
 
-                <div>MainPage</div>
 
-            </div>
-            <div className="flex items-center justify-center w-screen h-screen">
+            <Routes>
+                <Route path='/' element={<HomePage />} exact />
+                <Route path={'/tiket'} element={<TiketPage />} />
+            </Routes>
 
-                <div>MainPage</div>
-
-            </div>
 
             <FooterComp />
         </>

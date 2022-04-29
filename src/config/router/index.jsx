@@ -8,7 +8,7 @@ const MainRouter = () => {
         <Routes>
             <Route path='/register' element={<RegisterPage />} />
             <Route path='/login' element={<Loginpage />} />
-            <Route path='/' element={<MainPage />} />
+            <Route path='*' element={<MainPage />} />
         </Routes>
     )
 }

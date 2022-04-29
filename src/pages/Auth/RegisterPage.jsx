@@ -13,7 +13,7 @@ const RegisterPage = () => {
 
                     <BrandLogo className={'text-2xl '} />
                 </div>
-                <div className="tengah w-full">
+                <div className="tengah w-full md:px-24 lg:px-0">
                     <TengahRegis />
 
                 </div>

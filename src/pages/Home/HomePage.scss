@@ -1,0 +1,16 @@
+#HomePage {
+
+
+    .bg-homepage {
+
+        background: url('../../assets/img/home/bg-home.jpg');
+        background-size: cover;
+        background-attachment: fixed;
+    }
+
+    .pencarian-terakhir:hover .icon {
+        display: flex;
+        transform: translateX(4px);
+        transition: .2s;
+    }
+}

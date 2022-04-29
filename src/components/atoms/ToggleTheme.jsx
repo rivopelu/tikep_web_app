@@ -14,7 +14,7 @@ const ToggleTheme = () => {
     }
 
     return (
-        <div className='bg-purple-400 h-7 w-7 rounded-full flex items-center justify-center cursor-pointer shadow-lg dark:bg-purple-900 duration-200 fixed bottom-4 right-4' onClick={clickToggle}>
+        <div className='z-40 bg-orange-400 h-7 w-7 rounded-full flex items-center justify-center cursor-pointer shadow-lg dark:bg-orange-900 duration-200 fixed bottom-4 right-4' onClick={clickToggle}>
             <FontAwesomeIcon icon={themeIcon ? faMoon : faLightbulb} className="dark:text-white text-gray-800 duration-200" />
         </div>
     )
