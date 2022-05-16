@@ -16,7 +16,7 @@ const MainPage = () => {
             </Routes>
 
 
-            <FooterComp />
+            {/* <FooterComp /> */}
         </>
     )
 }

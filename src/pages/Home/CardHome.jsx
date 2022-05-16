@@ -12,7 +12,7 @@ const CardHome = () => {
         { value: 'vanilla', label: 'Vanilla' }
     ]
     return (
-        <div className='card border bg-white dark:bg-gray-900 dark:border-gray-600 px-3 lg:px-14 py-6 rounded-md shadow-lg lg:-translate-y-20'>
+        <div className='card border bg-white dark:bg-gray-900 dark:border-gray-800 px-3 lg:px-14 py-6 rounded-md shadow-lg lg:-translate-y-20'>
             <div className="atas flex flex-col  lg:flex-row lg:items-center lg:justify-between ">
                 <div className='flex  items-center gap-3'>
 

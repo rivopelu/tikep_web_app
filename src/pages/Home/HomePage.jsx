@@ -1,5 +1,8 @@
 
+import { faArrowRight } from '@fortawesome/free-solid-svg-icons'
+import { FontAwesomeIcon } from '@fortawesome/react-fontawesome'
 import React from 'react'
+import { RecentCardHome } from '../../components'
 import CardHome from './CardHome'
 import './HomePage.scss'
 const HomePage = () => {
@@ -14,7 +17,21 @@ const HomePage = () => {
 
                     <CardHome />
 
+                    <div className="recentSearch flex mt-6 lg:mt-0 justify-between">
+                        <p>Recent Search</p>
+                        <div className='flex items-center gap-2 text-orange-500 cursor-pointer'>
+                            <p>See All</p>
+                            <FontAwesomeIcon icon={faArrowRight} />
 
+                        </div>
+                    </div>
+                    <div className='flex flex-col gap-2 pt-6 lg:grid  lg:grid-cols-2 lg:gap-4 '>
+
+                        <RecentCardHome />
+                        <RecentCardHome />
+                        <RecentCardHome />
+                        <RecentCardHome />
+                    </div>
 
                 </div>
             </div>
